@@ -1,5 +1,5 @@
 const fs = require('fs')
-const requestIp = require('request-ip');
+const requestIp = require('request-ip')
 const ClaimType = require('../config/claimtypes')
 
 const errorHandler = (err, req, res, next) => {
@@ -16,7 +16,7 @@ const errorHandler = (err, req, res, next) => {
     if (err) {
       console.log(err)
     }
-  });
+  })
 
   if (process.env.NODE_ENV === 'development') {
     mensaje = err.message || mensaje

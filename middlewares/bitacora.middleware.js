@@ -1,4 +1,4 @@
-const requestIp = require('request-ip');
+const requestIp = require('request-ip')
 const ClaimTypes = require('../config/claimtypes')
 const { bitacora } = require('../models')
 
@@ -15,6 +15,7 @@ const bitacoralogger = (req, res, next) => {
       accion: accion, elementoid: id, ip: ip, usuario: email, fecha: new Date()
     })
   }
+
   next()
 }
 
